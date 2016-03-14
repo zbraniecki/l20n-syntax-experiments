@@ -15,15 +15,15 @@ crashed-2 = { brand-name } { brand-name[gender] ->
   [feminine]  uległa
 } awarii.
 
-new-notifications = { PLURAL($num) ->
+new-notifications = { plural($num) ->
   [0]    Brak nowych powiadomień.
   [1]    Jedno nowe powiadomienie.
   [few]  { $num } nowe powiadomienia.
  *[many] { $num } nowych powiadomień.
 }
 
-space-available = { PLURAL($num) ->
+space-available = { plural($num) ->
   [0]      Il n'y a plus de place.
-  [one]    { UNIT($num, type="digital", style="short") } disponible.
- *[other]  { UNIT($num, type="digital", style="short") } disponibles.
+  [one]    { unit($num, type="digital", style="short") } disponible.
+ *[other]  { unit($num, type="digital", style="short") } disponibles.
 }

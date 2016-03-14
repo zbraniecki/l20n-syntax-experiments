@@ -1,13 +1,13 @@
-liked-photo = { PLURAL($people) ->
+liked-photo = { plural($people) ->
     [1]     { $people } lubi
     [2]     { $people } lubią
-    [3]     { TAKE(2, $people), "jedna inna osoba" } lubią
+    [3]     { take(2, $people), "jedna inna osoba" } lubią
 
-   *[other] { TAKE(2, $people),
-              "{ PLURAL(DROP(2, $people)) ->
+   *[other] { take(2, $people),
+              "{ plural(drop(2, $people)) ->
                   [1]    jedna inna osoba lubią
-                  [few]  { LEN(DROP(2, $people)) } inne osoby lubią
-                 *[many] { LEN(DROP(2, $people)) } innych osób lubi
+                  [few]  { len(drop(2, $people)) } inne osoby lubią
+                 *[many] { len(drop(2, $people)) } innych osób lubi
                }"
             }
 } Twoje zdjęcie.

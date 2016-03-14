@@ -14,5 +14,5 @@ html-welcome =
 
 wifi-connected = You are now connected to { $ssid }.
 
-space-available = { UNIT($num) } available.
-space-available = { UNIT($num, type="digital", style="short") } available.
+space-available = { unit($num) } available.
+space-available = { unit($num, type="digital", style="short") } available.

@@ -1,0 +1,6 @@
+key
+  [dom:aria-label] Aria Label
+
+
+key
+  [:aria-label] Default Namespace
